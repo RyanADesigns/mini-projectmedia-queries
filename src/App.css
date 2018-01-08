@@ -1,0 +1,96 @@
+.App {
+  text-align: center;
+}
+.nav{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 16px;
+  background-color: yellow;
+}
+
+button {
+
+  display: block;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.square {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+
+}
+
+.circle {
+  height: 100px;
+  width: 100px;
+  background-color: orange;
+  border-radius: 50%;
+}
+
+.animation1 {
+  animation-name: bob;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.animation2 {
+
+}
+
+@keyframes bob {
+  0%{
+    background-color: red;
+    
+  }
+
+  100%{
+    background-color: blue;
+    transform: scale(0,2);
+  }
+}
+
+
+
+
+
+
+
+
+@media (max-width: 991px) {
+  .nav {
+    backround-color: black;
+  }
+}
+
+@media (max-width: 891px) {
+  .nav {
+    backround-color: red;
+  }
+}
+
+@media (max-width: 791px) {
+  .nav {
+    backround-color: blue;
+  }
+}
+
+@media (max-width: 691px) {
+  .nav {
+    backround-color: orange;
+    
+  }
+
+  button {
+    display: block;
+  }
+  words{
+    display: none;
+  }
+
+}
